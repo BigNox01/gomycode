@@ -11,33 +11,70 @@
 body,html{
     padding: 0;
     margin: 0;
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
 }
 .navigation-bar{
     display: flex;
     flex-direction: row;
     font-family: 'Roboto', monospace;
-    justify-items: stretch;
-    
- 
+  justify-content: space-between;
     }
 
-
 #left{
-    margin-left: auto;
+    margin-left: 5%;
+}
+
+#right{
+    margin-right: 15%;
 }
 
 nav a {
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
 }
+
 nav a:visited {
     color: var(--jasmine);
 }
-nav:hover a{
+nav h3:hover{
     color: chocolate;
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
 }
 a h2{
-    margin-left: 10%;
+    margin-left: 5%;
+    color:white;
+}
+#title{
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+}
+li,p{
+    margin: 5px;
+    line-height: 1.5;  
+}
+h3{
+    margin-left: 2%;
+}
+.filling-form,#personal-description{
+    text-align: center;
+    line-height: 1.5;
+    font-size: large;   
+}
+.resume-image{
+    width: 250px;
+    height: 250px;
+    margin-left: 3%;
+    margin: 20px;
+}
+iframe{
+    display: flex;
+}
+tr{
+    align-items: center;
 }
