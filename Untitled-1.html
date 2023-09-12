@@ -11,62 +11,64 @@
 <body>
 <!--     this is navigation bar code
  -->    <nav class="navigation-bar">
-    <img src="my logo.png" width="150px" height="150px" id="site-logo">
-
+    <img src="my logo.png" width="200px" height="150px" id="site-logo">
         <a id="left" href="#About"><h3>About</h3></a>
         <a href="#Work Experience"><h3>Work Experience</h3></a>
         <a href="#Educational"><h3>Educational background</h3></a>
-        <a href="#contact"><h3>Contact</h3></a>
+        <a id="right" href="#contact"><h3>Contact</h3></a>
     </nav>
-<header><b>I am Fares Maazoul</b></header>  
-<p>this is a simple portfolio with which i will demonstrate my current acquired skill with HTML</p>
+    <br/>
+<header id="title"><b>I am Fares Maazoul</b></header>
+<section name="About">
+    <a name="About myself">
+        <header><h2>About myself</h2></header>
+        <p id="personal-description">
+            i am currently looking for work experience to further acquire
+             new knowledge and be able to use it to create new things for the benefit of the company that i 
+            will work for.I am a hard working individual with the needed requirments to work with a team.i am looking
+        specifically for an intern ship in an app or a web devellopment company.
+    </p>  
     <main>
 <!--         this is the code that concerns the resume part
- -->        <section name="Resume">
-            <section name="Educational">
-                <a name="Educational">
-                    <header><h2>Educational background</h2></header>
-                    <h3>Highschool</h3>
-                    <ul>
-                        <li>lycee Taha Hussien Megrine</li>
-                        <li>lycee Farhat Hached Rades</li>
-                    </ul>
-                    <h3>University</h3>
-                    <img src="iset.jfif">
-                    <br/>
-                    <p><b>Institut superieur des études technologiques de Rades</b></p>
-            </a>
-            </section>
-            <section name="Work">
-                <a name="Work Experience">
-                    <header><h2>Work Experience</h2></header>
-                    <ol>
-                        <img src="chimicouleur.jpg">
-                        <li>1 mounth with CHIMICOULEUR EMBALLAGE</li>
-                        <br/>
-                        <img src="steg.jpg">
-                        <li>1 mounth with STEG(sociéte tunisienne d'électricité et gaz)</li>
-                        <li>end of studies project with STEG</li>
-                    </ol>
-                </a>
+ -->
+ <div class="resume1">
+    <section name="Resume">
+        <section name="Educational">
+            <a name="Educational">
+                <header><h2>Educational background</h2></header>
+                <h3>Highschool</h3>
+                <ul>
+                    <li>lycee Taha Hussien Megrine</li>
+                    <li>lycee Farhat Hached Rades</li>
+                </ul>
+                <h3>University</h3>
+                <img src="iset-removebg-preview.png" class="resume-image">
+                <br/>
+                <p><b>Institut superieur des études technologiques de Rades</b></p>
+        </a>
         </section>
-        </section>
-        <section name="About">
-            <a name="About myself">
-                <header><h2>About myself</h2></header>
-                <p>
-                    i am currently looking for work experience to further acquire
-                     new knowledge and be able to use it to create new things for the benefit of the company that i 
-                    will work for.I am a hard working individual with the needed requirments to work with a team.i am looking
-                specifically for an intern ship in an app or a web devellopment company.
-            </p>
-            </a>
-        </section>
+ </div>
+ <div class="resume2">
+    <section name="Work">
+        <a name="Work Experience">
+            <header><h2>Work Experience</h2></header>
+            <ol>
+                <img src="chimicouleur-removebg-preview.png" class="resume-image">
+                <li>1 month with CHIMICOULEUR EMBALLAGE</li>
+                <br/>
+                <img src="steg.jpg" class="resume-image">
+                <li>1 month with STEG(sociéte tunisienne d'électricité et gaz)</li>
+                <li>end of studies project with STEG</li>
+            </ol>
+        </a>
+</section>
+ </div>
+ 
 <!--         this is the contact part 
  -->        <section name="Contact">
             <a name="contact">            
                 <header><h2>If you want to contact me</h2></header>
-                <form>
+                <form class="filling-form">
                 <input
                 type="text"
                 placeholder="First name">
@@ -97,7 +99,8 @@
                 <th>Discord</th>
             </tr>
             <tr>
-                <th><img src="facebook.png" height="50px" width="50px"></th>
+                
+                <th><a href=""><img src="facebook.png" height="50px" width="50px" ></a></th>
                 <th><img src="instagram.png" height="50px" width="50px"></th>
                 <th><img src="linkedin.png" height="50px" width="50px"></th>
                 <th><img src="discorde.png"height="50px" width="50px"></th>
